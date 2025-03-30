@@ -1,10 +1,15 @@
 # lsi-9211-8i-it-mode
+
 Repository that includes the EFI shell and firmware to flash a LSI 9211 8i HBA card to IT mode
 
 ## Contents
+
 `/EFI/BOOT/BOOTX64.efi` - EFI Shell
+
 `/2118it.bin` - Firmware v20 IT mode
+
 `/mptsas2.rom` - Firmware ROM file
+
 `/sas2flash.efi` - Flashing Utility
 
 ## Preparation
@@ -17,7 +22,7 @@ Copy contents of this repo to root dir.
 
 Boot into the UEFI partition of the drive. Once you have a UEFI shell, navigate to the flash drive's filesystem, clear the existing firmware and install anew with IT mode.
 
-```dos
+```powershell
 map
 fs0:
 ls
